@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var k = prompt("Введите количество элементов массива: ")
+
+        var d =[]
+        for (let i =0; i<k; i++){
+            d[i] = prompt()
+        }
+        document.write("Введеный массив: "+d+"<br>");
+        maxD = Math.max(...d);
+        document.write("Максимальный элемент: "+maxD+"<br>");
+        var steps = 0;
+        for(let i=0; i<k; i++){
+            document.write(i+1+"-ому элементу нужно добавить: " + (maxD-d[i])+"<br>");
+            steps+=maxD-d[i];
+        }
+        document.write("Общее количество шагов: "+steps);
+    </script>
+    
+
+</body>
+</html>

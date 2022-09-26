@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1</title>
+</head>
+<body>
+    <h2> Lab 1 </h2>
+    <p>Введите число элементов массива: </p>
+    <form name="digit">
+        <input type="text" name="key" ></input>
+        <input type="button" name="print" value="Печать" />
+        
+    </form>
+    <div id="printBlock"></div>
+    
+    <script>
+        
+    function inputDigit(e){
+        var keyBox = document.digit.key;
+        var val = keyBox.value;
+                
+        var printBlock = document.getElementById("printBlock");
+        var pElement = document.createElement("p");
+        pElement.textContent = ("Введеное значение "+val);
+        printBlock.appendChild(pElement);
+    }
+    function fill(){
+        digits = []
+        for(let i; i<val; i++){
+            digits[i] = Math.random(); 
+        }
+        document.write(digits)
+    }
+    function calculate(){
+
+    }
+    
+        var sendButton = document.digit.print;
+        sendButton.addEventListener("click", inputDigit);
+        
+    </script>
+</body>
+</html>
